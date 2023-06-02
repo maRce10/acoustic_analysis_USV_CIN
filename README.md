@@ -7,9 +7,17 @@ Araya-Salas, PhD</a></font><br>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+
+
+
+<div class="alert alert-info">
+
 ## Propósito
 
-- *Este protocolo explica los pasos necesarios para llevar a cabo annotaciones de las llamadas ultrasonicas de ratas Winstar*.
+- *Este protocolo explica los pasos necesarios para llevar a cabo anotaciones de las llamadas ultrasónicas de ratas Winstar*.
+
+</div>
+
 
  
 
@@ -19,10 +27,11 @@ Araya-Salas, PhD</a></font><br>
 
 - [Hoja de datos con lista de archivos de audio](https://docs.google.com/spreadsheets/d/1oNB9kOEIUy8QLAHQobm9EE4f47GmrbwAtTHT8yO9L2M/edit?usp=sharing)
 - [Grabaciones]()
-- [window preset de Raven](https://drive.google.com/drive/folders/1SP_0krVDkJQiOzQQaipVTd1lrvNle-FE?usp=sharing)
+- [window preset de Raven para windows](https://github.com/maRce10/bird_song_evolution/raw/master/bird_songs)
+- [window preset de Raven para Mac](https://github.com/maRce10/acoustic_analysis_USV_CIN/raw/master/scripts/VUS-2023-MAC)
 - [Carpeta para subir anotaciones](https://drive.google.com/drive/folders/1WJcLtCaJ7d9cnKnnmhEp8RXj1H86YOJ0?usp=sharing)
-- [Reporte del estado de las anotaciones]()
-- [Espectrogramas anotados]()
+- ~~[Reporte del estado de las anotaciones]()~~
+- ~~[Espectrogramas anotados]()~~
 
 ------------------------------------------------------------------------
 
