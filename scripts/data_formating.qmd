@@ -1,0 +1,74 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r packages, eval = TRUE}
+
+sketchy::load_packages(c("numform", github = "maRce10/warbleR", github = "maRce10/Rraven"))
+
+```
+
+
+
+# format sound files
+
+```{r, eval = FALSE}
+
+# cnd <- consolidate(save.csv = T, path = "/run/user/1000/gvfs/smb-share:server=cinnas.local,share=neurobiología/Juan Carlos/AUTOADMINISTRACION ALCOHOL/AUDIOS", dest.path = "/run/user/1000/gvfs/smb-share:server=cinnas.local,share=neurobiología/bioacustica_2023/audios", overwrite = FALSE)
+
+
+cnd <- read.csv("/run/user/1000/gvfs/smb-share:server=cinnas.local,share=neurobiología/bioacustica_2023/audios/file_names_info.csv")
+
+fix_wavs(samp.rate = 250, path =  "/run/user/1000/gvfs/smb-share:server=cinnas.local,share=neurobiología/bioacustica_2023/audios", mono = TRUE)
+ 
+wav_2_flac(files = NULL, path = "/run/user/1000/gvfs/smb-share:server=cinnas.local,share=neurobiología/bioacustica_2023/audios", overwrite = FALSE)
+ 
+fi <- info_sound_files(path = "/run/user/1000/gvfs/smb-share:server=cinnas.local,share=neurobiología/bioacustica_2023/audios/", parallel = 1, file.format = "flac")
+
+csf <- check_sound_files(path = "/run/user/1000/gvfs/smb-share:server=cinnas.local,share=neurobiología/bioacustica_2023/audios/")
+
+redo <- cnd[cnd$new_name %in% gsub("flac", "wav", csf),]
+Z
+file.copy(from = file.path(redo$original_dir, redo$old_name), to = file.path("/run/user/1000/gvfs/smb-share:server=cinnas.local,share=neurobiología/bioacustica_2023/audios", redo$new_name), overwrite = FALSE)
+
+unlink(file.path("/run/user/1000/gvfs/smb-share:server=cinnas.local,share=neurobiología/bioacustica_2023/audios/", csf))
+
+duration_sound_files(path = "/run/user/1000/gvfs/smb-share:server=cinnas.local,share=neurobiología/bioacustica_2023/audios/")
+
+```
+
+# Rename files
+```{r, eval = FALSE}
+
+named_df <- read.csv("/run/user/1000/gvfs/smb-share:server=cinnas.local,share=neurobiología/bioacustica_2023/audios/file_names_info.csv")
+
+named_df$project <- "742-B5-A30"
+
+named_df$flac_file_name <- paste0("742-B5-A30", "_", f_pad_left(1:nrow(named_df), pad.char = "0", width = 4), ".flac")
+
+
+named_df$duplicate <- NULL
+head(named_df)
+write.csv(named_df, "./data/processed/metadata/742-B5-A30.csv", row.names = FALSE)
+nrow(named_df)
+
+path <- "/run/user/1000/gvfs/smb-share:server=cinnas.local,share=neurobiología/bioacustica_2023/audios/"
+
+dir.create(file.path(path, "renamed_files"))
+
+# rename
+result <- file.copy(
+    from = file.path(path, gsub("wav$", "flac", named_df$new_name)), 
+    to = file.path(path, "renamed_files", named_df$flac_file_name))   
+
+if (sum(!results) == 0) print("everything OK") else
+    print("something did not work")
+
+
+```
+
