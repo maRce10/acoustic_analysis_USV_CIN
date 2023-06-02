@@ -7,14 +7,13 @@ Araya-Salas, PhD</a></font><br>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-
-
+&nbsp;
 
 <div class="alert alert-info">
 
 ## Propósito
 
-- *Este protocolo explica los pasos necesarios para llevar a cabo anotaciones de las llamadas ultrasónicas de ratas Winstar*.
+- <font size="5">Este protocolo explica los pasos necesarios para llevar a cabo anotaciones de las llamadas ultrasónicas de ratas Winstar</font>
 
 </div>
 
