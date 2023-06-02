@@ -84,7 +84,7 @@ El número del subtipo debe anotarse en la columna "subtipo". Cualquier duda sob
 
 &nbsp;
 
-9. Cuando haya terminado de anotar el archivo suba el archivo .txt a la [carpeta de anotaciones](https://drive.google.com/drive/folders/1WJcLtCaJ7d9cnKnnmhEp8RXj1H86YOJ0?usp=sharing)(si no le permite editar haganos saber) y escriba la fecha en [hoja de anotaciones](https://docs.google.com/spreadsheets/d/1oNB9kOEIUy8QLAHQobm9EE4f47GmrbwAtTHT8yO9L2M/edit?usp=sharing):
+9. Cuando haya terminado de anotar el archivo suba el archivo .txt a la [carpeta de anotaciones](https://drive.google.com/drive/folders/1WJcLtCaJ7d9cnKnnmhEp8RXj1H86YOJ0?usp=sharing) (si no le permite editar haganos saber) y escriba la fecha en [hoja de anotaciones](https://docs.google.com/spreadsheets/d/1oNB9kOEIUy8QLAHQobm9EE4f47GmrbwAtTHT8yO9L2M/edit?usp=sharing):
 
 <img src="./scripts/metadata_doc2.png" width="100%" />  
 
