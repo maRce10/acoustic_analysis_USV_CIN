@@ -1,6 +1,8 @@
 ---
 title: "Protocol de anotación de vocalizaciones ultrasónicas de ratas"
-format: gfm
+format: 
+    gfm:
+        link-external-newwindow: true
 ---
 
 <font size="4"><a href="marce10.github.io">Marcelo
