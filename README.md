@@ -49,6 +49,11 @@ PhD</a></font><br>
 
  
 
+Si no le permite editar el archivo solicite el acceso haciendo click en
+el botón “solo lectura”:
+
+<img src="./scripts/request_access.png" width="100%" />  
+
 2.  Baje el archivo de la [carpeta compartida de
     audios](https://6f33fa7f78ea46e2aaca-my.sharepoint.com/:f:/g/personal/marcelo_araya_ucr_ac_cr/Er8ro9LYHc5EgtSPLqf4_g4BSrQL5qB37HJJ_LnIys1RoQ?e=edTXTO):
 
