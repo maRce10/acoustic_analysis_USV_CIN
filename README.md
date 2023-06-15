@@ -28,7 +28,7 @@ PhD</a></font><br>
   audio](https://docs.google.com/spreadsheets/d/1oNB9kOEIUy8QLAHQobm9EE4f47GmrbwAtTHT8yO9L2M/edit?usp=sharing)
 - [Grabaciones](https://6f33fa7f78ea46e2aaca-my.sharepoint.com/:f:/g/personal/marcelo_araya_ucr_ac_cr/Er8ro9LYHc5EgtSPLqf4_g4BSrQL5qB37HJJ_LnIys1RoQ?e=edTXTO)
 - [window preset de Raven para
-  windows](https://github.com/maRce10/bird_song_evolution/raw/master/bird_songs)
+  windows](https://github.com/maRce10/acoustic_analysis_USV_CIN/raw/master/scripts/VUS-2023-WINDOWS)
 - [window preset de Raven para
   Mac](https://github.com/maRce10/acoustic_analysis_USV_CIN/raw/master/scripts/VUS-2023-MAC)
 - [Carpeta para subir
